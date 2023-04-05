@@ -19,15 +19,15 @@ router.post('/easy_mailer', function (req, res, next) {
   var transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "divubhai36@gmail.com",
+      user: "xyz@gmail.com",
       pass: "awmwhsuldczyflys",
     },
   });
 
   var mailOptions = {
-    from: "divubhai36@gmail.com",
+    from: "xyz@gmail.com",
     // ONLY CHANGE EMAIL ADDRESS HERE AND SENDING CONTENT
-    to: "divyeshrupareliya150@gmail.com",
+    to: "xyz@gmail.com",
     subject: "NodeMailer Testing ",
     text: ":::   nodemailer   :::",
     html:`
@@ -73,16 +73,16 @@ router.post('/mailer', function (req, res, next) {
       port: 587,
       secure: false, // true for 465, false for other ports
       auth: {
-        user: "divubhai36@gmail.com",
+        user: "xyz@gmail.com",
         pass: "awmwhsuldczyflys",
       },
     });
 
     // send mail with defined transport object
     let info = await transporter.sendMail({
-      from: "divubhai36@gmail.com", // sender address
-      to: "divyeshrupareliya150@gmail.com", // list of receivers
-      // to: ["divyeshrupareliya150@gmail.com","divubhai36@gmail.com"], // list of receivers
+      from: "xyz@gmail.com", // sender address
+      to: "xyz@gmail.com", // list of receivers
+      // to: ["xyz@gmail.com","xyz@gmail.com"], // list of receivers
       subject: "Hello my self Rupareliya Divyesh", // Subject line
       text: "WEL-COME, Thank-you to Join Us", // plain text body
       html: `<h1>${OTP}</h1>
@@ -95,14 +95,14 @@ router.post('/mailer', function (req, res, next) {
             <th>password</th>
           </tr>
           <tr>
-            <td>Divyesh</td>
-            <td>divyeshr1</td>
-            <td>pass@123</td>
+            <td>NONAME</td>
+            <td>NOUSERNAME</td>
+            <td>NOPASS</td>
           </tr>
           <tr>
-            <td>Kenil</td>
-            <td>kenilmangroliya</td>
-            <td>ken@123</td>
+          <td>NONAME</td>
+          <td>NOUSERNAME</td>
+          <td>NOPASS</td>
           </tr>
        </table>
        <img src="https://images.caricos.com/b/bmw/2015_bmw_6-series_cabrio/images/1920x1080/2015_bmw_6-series_cabrio_99_1920x1080.jpg" width="100%  " >
